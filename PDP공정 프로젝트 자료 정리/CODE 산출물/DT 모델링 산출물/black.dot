@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="BLACK_RTD_TEMP_HOOD_MAX <= 96.15\ngini = 0.198\nsamples = 2787\nvalue = [310, 2477]\nclass = 양품", fillcolor="#52a9e8"] ;
+1 [label="BLACK_RTD_PRES_START <= 137.15\ngini = 0.129\nsamples = 1486\nvalue = [103, 1383]\nclass = 양품", fillcolor="#48a4e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = 명점", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="BLACK_RTD_TEMP_GLASS_END <= 121.3\ngini = 0.126\nsamples = 1483\nvalue = [100, 1383]\nclass = 양품", fillcolor="#47a4e7"] ;
+1 -> 3 ;
+4 [label="BLACK_RTD_TEMP_GLASS_START <= 42.6\ngini = 0.124\nsamples = 1481\nvalue = [98, 1383]\nclass = 양품", fillcolor="#47a4e7"] ;
+3 -> 4 ;
+5 [label="gini = 0.28\nsamples = 125\nvalue = [21, 104]\nclass = 양품", fillcolor="#61b1ea"] ;
+4 -> 5 ;
+6 [label="gini = 0.107\nsamples = 1356\nvalue = [77, 1279]\nclass = 양품", fillcolor="#45a3e7"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = 명점", fillcolor="#e58139"] ;
+3 -> 7 ;
+8 [label="BLACK_RTD_TEMP_GLASS_END <= 120.55\ngini = 0.268\nsamples = 1301\nvalue = [207, 1094]\nclass = 양품", fillcolor="#5eb0ea"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="BLACK_RTD_PRES_START <= 144.1\ngini = 0.26\nsamples = 1293\nvalue = [199, 1094]\nclass = 양품", fillcolor="#5dafea"] ;
+8 -> 9 ;
+10 [label="BLACK_RTD_TEMP_WALL_START <= 88.75\ngini = 0.471\nsamples = 50\nvalue = [19, 31]\nclass = 양품", fillcolor="#b2d9f5"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 16\nvalue = [0, 16]\nclass = 양품", fillcolor="#399de5"] ;
+10 -> 11 ;
+12 [label="gini = 0.493\nsamples = 34\nvalue = [19, 15]\nclass = 명점", fillcolor="#fae4d5"] ;
+10 -> 12 ;
+13 [label="BLACK_RTD_TEMP_GLASS_START <= 45.55\ngini = 0.248\nsamples = 1243\nvalue = [180, 1063]\nclass = 양품", fillcolor="#5baee9"] ;
+9 -> 13 ;
+14 [label="gini = 0.235\nsamples = 1194\nvalue = [162, 1032]\nclass = 양품", fillcolor="#58ace9"] ;
+13 -> 14 ;
+15 [label="gini = 0.465\nsamples = 49\nvalue = [18, 31]\nclass = 양품", fillcolor="#acd6f4"] ;
+13 -> 15 ;
+16 [label="gini = 0.0\nsamples = 8\nvalue = [8, 0]\nclass = 명점", fillcolor="#e58139"] ;
+8 -> 16 ;
+}

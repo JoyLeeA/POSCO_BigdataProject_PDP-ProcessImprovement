@@ -1,0 +1,6 @@
+y_pred = scaled_log_result.predict(df_scaled_test)
+y_pred_class = (y_pred > 0.5).astype(int)
+y_pred_class.head()
+
+print("Accuracy: {0:.3f}\n".format(accuracy_score(df_scaled_test["JUDGE"],y_pred_class)))
+print("Confusion Matrix:\n{}".format(confusion_matrix(df_scaled_test["JUDGE"],y_pred_class)))

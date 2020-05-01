@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="AG_RTD_TEMP_GLASS_OUT <= 48.05\ngini = 0.198\nsamples = 2787\nvalue = [310, 2477]\nclass = 양품", fillcolor="#52a9e8"] ;
+1 [label="AG_RTD_TEMP_GLASS_OUT <= 46.45\ngini = 0.144\nsamples = 2687\nvalue = [210, 2477]\nclass = 양품", fillcolor="#4aa5e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AG_RTD_TEMP_GLASS_OUT <= 44.05\ngini = 0.08\nsamples = 2316\nvalue = [97, 2219]\nclass = 양품", fillcolor="#42a1e6"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1057\nvalue = [0, 1057]\nclass = 양품", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="AG_RTD_TEMP_WALL_START <= 80.95\ngini = 0.142\nsamples = 1259\nvalue = [97, 1162]\nclass = 양품", fillcolor="#4aa5e7"] ;
+2 -> 4 ;
+5 [label="gini = 0.134\nsamples = 1251\nvalue = [90, 1161]\nclass = 양품", fillcolor="#48a5e7"] ;
+4 -> 5 ;
+6 [label="gini = 0.219\nsamples = 8\nvalue = [7, 1]\nclass = 명점", fillcolor="#e99355"] ;
+4 -> 6 ;
+7 [label="AG_RTD_TEMP_WALL_START <= 78.25\ngini = 0.424\nsamples = 371\nvalue = [113, 258]\nclass = 양품", fillcolor="#90c8f0"] ;
+1 -> 7 ;
+8 [label="AG_RTD_PRES_END <= 325.95\ngini = 0.348\nsamples = 290\nvalue = [65, 225]\nclass = 양품", fillcolor="#72b9ed"] ;
+7 -> 8 ;
+9 [label="gini = 0.165\nsamples = 11\nvalue = [10, 1]\nclass = 명점", fillcolor="#e88e4d"] ;
+8 -> 9 ;
+10 [label="gini = 0.317\nsamples = 279\nvalue = [55, 224]\nclass = 양품", fillcolor="#6ab5eb"] ;
+8 -> 10 ;
+11 [label="AG_RTD_TEMP_GLASS_END <= 137.5\ngini = 0.483\nsamples = 81\nvalue = [48, 33]\nclass = 명점", fillcolor="#f7d8c1"] ;
+7 -> 11 ;
+12 [label="gini = 0.245\nsamples = 14\nvalue = [2, 12]\nclass = 양품", fillcolor="#5aade9"] ;
+11 -> 12 ;
+13 [label="gini = 0.43\nsamples = 67\nvalue = [46, 21]\nclass = 명점", fillcolor="#f1bb93"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 100\nvalue = [100, 0]\nclass = 명점", fillcolor="#e58139"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
