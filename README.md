@@ -30,7 +30,7 @@
 - MFG_PROCESS: 공정이 이루어지는 조건 (ex> 온도, 배기량)
 - MFG_TAT: 공정별 소요 시간
 
-전처리 데이터
+[전처리 데이터]
 - MFG_MACHINE_NULL_COL_OUT: MFG_MACHINE에서 결측치(NULL)와 불필요한 열(COL), 
 				 그리고, 이상치(OUT)을 제거한 데이터
 - MFG_PROCESS_NULL_COL_OUT: MFG_PROCESS 에서 결측치(NULL)와 불필요한 열(COL), 
